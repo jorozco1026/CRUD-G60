@@ -1,0 +1,9 @@
+C:\proyectos_ciclo3\ProyectoG60.App\ProyectoG60.App.Persistencia\bin\Debug\netstandard2.0\ProyectoG60.App.Persistencia.deps.json
+C:\proyectos_ciclo3\ProyectoG60.App\ProyectoG60.App.Persistencia\bin\Debug\netstandard2.0\ProyectoG60.App.Persistencia.dll
+C:\proyectos_ciclo3\ProyectoG60.App\ProyectoG60.App.Persistencia\bin\Debug\netstandard2.0\ProyectoG60.App.Persistencia.pdb
+C:\proyectos_ciclo3\ProyectoG60.App\ProyectoG60.App.Persistencia\obj\Debug\netstandard2.0\ProyectoG60.App.Persistencia.csprojAssemblyReference.cache
+C:\proyectos_ciclo3\ProyectoG60.App\ProyectoG60.App.Persistencia\obj\Debug\netstandard2.0\ProyectoG60.App.Persistencia.AssemblyInfoInputs.cache
+C:\proyectos_ciclo3\ProyectoG60.App\ProyectoG60.App.Persistencia\obj\Debug\netstandard2.0\ProyectoG60.App.Persistencia.AssemblyInfo.cs
+C:\proyectos_ciclo3\ProyectoG60.App\ProyectoG60.App.Persistencia\obj\Debug\netstandard2.0\ProyectoG60.App.Persistencia.csproj.CoreCompileInputs.cache
+C:\proyectos_ciclo3\ProyectoG60.App\ProyectoG60.App.Persistencia\obj\Debug\netstandard2.0\ProyectoG60.App.Persistencia.dll
+C:\proyectos_ciclo3\ProyectoG60.App\ProyectoG60.App.Persistencia\obj\Debug\netstandard2.0\ProyectoG60.App.Persistencia.pdb
