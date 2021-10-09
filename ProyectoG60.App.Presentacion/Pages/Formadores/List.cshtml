@@ -1,61 +1,39 @@
 ﻿@page
-@model ProyectoG60.App.Presentacion.ListModel
-
-<h1>AQUI SE TRABAJARA EL CRUD COMPLETO</h1>
-<h1>LISTAR - NUEVO - EDITAR - ACTUALIZAR - ELIMINAR</h1>
+@model ProyectoG60.App.Presentacion.Pages.ListModel
 
 @{
-    ViewData["Title"] = "Index";
 }
 
-<h2>Index</h2>
-
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
+<h1>Listado de Formadores</h1>
 <table class="table">
-    <thead>
+    @foreach (var formador in Model.formadores)
+    {
         <tr>
-                <th>
-                    @Html.DisplayNameFor(model => model.Name)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.City)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.Department)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.Salary)
-                </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
+            <td>@formador.id</td>
+            <td>@formador.identificacion</td>
+            <td>@formador.nombre</td>
             <td>
-                @Html.DisplayFor(modelItem => item.Name)
+                <a class="btn btn-primary table-btn" asp-page="./Details" asp-route-formadorId="@formador.id">
+                  <i class="fas fa-info-circle fa-lg"></i>Detalle
+                </a>
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.City)
+                <a class="btn btn-primary table-btn" asp-page="./List" asp-route-formadorId="@formador.id">
+                  <i class="fas fa-address-book fa-lg" aria-hidden="true">Editar</i>
+                </a>
             </td>
+           <td>
+                <a class="btn btn-danger table-btn" asp-page="./List" asp-route-formadorId="@formador.id">
+                  <i class="fas fa-address-book fa-lg" aria-hidden="true">Eliminar</i>
+                </a>
+            </td> 
             <td>
-                @Html.DisplayFor(modelItem => item.Department)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Salary)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+            <li class="nav-item">
+                            <a class="nav-link text-dark" asp-page="./Details" asp-route-formadorId="@formador.id">DETALLE 2</a>
+                        </li> 
             </td>
         </tr>
-}
-    </tbody>
+    }
 </table>
 
-
-@{
-}
+<a asp-page=".\List" class="btn btn-primary">Adicionar un Formador</a>

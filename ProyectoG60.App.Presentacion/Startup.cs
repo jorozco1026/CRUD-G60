@@ -9,6 +9,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
+using ProyectoG60.App.Persistencia;
+
 namespace ProyectoG60.App.Presentacion
 {
     public class Startup
@@ -24,6 +26,7 @@ namespace ProyectoG60.App.Presentacion
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddRazorPages();
+            //services.AddSingleton<IRepositorioFormador, RepositorioFormador>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

@@ -1,10 +1,10 @@
 using System.Collections.Generic;
 using System.Linq;
-using ProyectoG60.App.Dominio.Entidades;
-using ProyectoG60.App.Persistencia.AppRepositorios;
+using ProyectoG60.App.Dominio;
+using ProyectoG60.App.Persistencia;
 
 
-namespace ProyectoG60.App.Persistencia.AppRepositorios
+namespace ProyectoG60.App.Persistencia
 {
     public class RepositorioFormador : IRepositorioFormador
     {
@@ -19,7 +19,7 @@ namespace ProyectoG60.App.Persistencia.AppRepositorios
 
         Formador IRepositorioFormador.AddFormador(Formador formador)
         {
-            var FormadorAdicionado = _appContext.Formadores.Add(formador);
+            var FormadorAdicionado = _appContext.Formadores.Add( formador );  //INSERT en la BD
             _appContext.SaveChanges();                  
             return FormadorAdicionado.Entity;
         }

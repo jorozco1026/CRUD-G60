@@ -1,6 +1,6 @@
 using System;
 
-namespace ProyectoG59.App.Dominio.Entidades
+namespace ProyectoG60.App.Dominio
 {
     public class Formador
     {

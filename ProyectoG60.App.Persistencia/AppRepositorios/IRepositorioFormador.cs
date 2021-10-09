@@ -2,9 +2,10 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using ProyectoG60.App.Dominio.Entidades;
 
-namespace ProyectoG60.App.Persistencia.AppRepositorios
+using ProyectoG60.App.Dominio;
+
+namespace ProyectoG60.App.Persistencia
 {
     public interface IRepositorioFormador
     {

@@ -1,8 +1,8 @@
 //directivas
 using Microsoft.EntityFrameworkCore;
-using ProyectoG60.App.Dominio.Entidades;
+using ProyectoG60.App.Dominio;
 
-namespace ProyectoG60.App.Persistencia.AppRepositorios
+namespace ProyectoG60.App.Persistencia
 {
     public class AppContext  : DbContext
     {
@@ -14,7 +14,8 @@ namespace ProyectoG60.App.Persistencia.AppRepositorios
             if (!optionsBuilder.IsConfigured)
             {
                 optionsBuilder
-               .UseSqlServer("Data Source = (localdb)\\MSSQLLocalDB; Initial Catalog =ProyectoG60");
+                .UseSqlServer("Server=localhost; Database=Desault; user id=sa; password=12345; Initial Catalog = ProyectoG60");
+               //.UseSqlServer("Data Source = (localdb)\\MSSQLLocalDB; Initial Catalog =ProyectoG60");
             }
         }        
     }
