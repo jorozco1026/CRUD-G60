@@ -81,3 +81,5 @@ C:\proyectos_ciclo3\ProyectoG60.App\ProyectoG60.App.Presentacion\bin\Debug\netco
 C:\proyectos_ciclo3\ProyectoG60.App\ProyectoG60.App.Presentacion\bin\Debug\netcoreapp3.1\ProyectoG60.App.Dominio.pdb
 C:\proyectos_ciclo3\ProyectoG60.App\ProyectoG60.App.Presentacion\bin\Debug\netcoreapp3.1\ProyectoG60.App.Persistencia.pdb
 C:\proyectos_ciclo3\ProyectoG60.App\ProyectoG60.App.Presentacion\obj\Debug\netcoreapp3.1\Razor\Pages\Formadores\Details.cshtml.g.cs
+C:\proyectos_ciclo3\ProyectoG60.App\ProyectoG60.App.Presentacion\bin\Debug\netcoreapp3.1\Humanizer.dll
+C:\proyectos_ciclo3\ProyectoG60.App\ProyectoG60.App.Presentacion\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll

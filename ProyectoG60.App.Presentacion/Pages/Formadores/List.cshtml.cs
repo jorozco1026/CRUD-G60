@@ -4,20 +4,22 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+//using Microsoft.AspNetCore.Authorization;
 
 using ProyectoG60.App.Dominio;
 using ProyectoG60.App.Persistencia;
 
 namespace ProyectoG60.App.Presentacion.Pages
 {
+    //[Authorize]
     public class ListModel : PageModel
     {
-        private static IRepositorioFormador _repoFormador = new RepositorioFormador (new Persistencia.AppContext());
+        private readonly IRepositorioFormador repositorioFormadores;
 
         public IEnumerable<Formador> formadores { get; set; }
 
         public ListModel(){
-            formadores = _repoFormador.GetAllFormadores();
+            this.repositorioFormadores=new RepositorioFormador(new ProyectoG60.App.Persistencia.AppContext());
             //simular la lista a mostrar en la tabla HTML
             /*formadores = new List<Formador>()
             {
@@ -29,7 +31,8 @@ namespace ProyectoG60.App.Presentacion.Pages
 
         public void OnGet()
         {
-            
+            formadores = repositorioFormadores.GetAllFormadores();
+
         }
     }
 }

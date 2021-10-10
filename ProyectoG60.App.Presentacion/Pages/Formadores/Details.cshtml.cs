@@ -8,22 +8,23 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using ProyectoG60.App.Dominio;
 using ProyectoG60.App.Persistencia;
 
+
 namespace ProyectoG60.App.Presentacion.Pages
 {
     public class DetailsModel : PageModel
     {
-        private static IRepositorioFormador _repoFormador = new RepositorioFormador (new Persistencia.AppContext());
+        private readonly IRepositorioFormador repositorioFormadores;
         public Formador formador { get; set; }
 
-        public DetailsModel()
-        {
-            //this.repositorioFormadores=new RepositorioFormador(new ProyectoG60.App.Persistencia.AppContext());
+        public DetailsModel(IRepositorioFormador repositorioFormadores)
+        {            
+            this.repositorioFormadores=new RepositorioFormador(new ProyectoG60.App.Persistencia.AppContext());
         }
 
-        public IActionResult OnGet(int FormadorId)
+        public IActionResult OnGet(int formadorId)
         {
-            formador = _repoFormador.GetFormador(FormadorId);
-            if(formador == null)
+            formador = repositorioFormadores.GetFormador(formadorId);
+            if(formador==null)
             {
                 return RedirectToPage("./NotFound");
             }

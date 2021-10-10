@@ -26,7 +26,8 @@ namespace ProyectoG60.App.Presentacion
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddRazorPages();
-            //services.AddSingleton<IRepositorioFormador, RepositorioFormador>();
+            services.AddSingleton<ProyectoG60.App.Persistencia.AppContext>();
+            
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
